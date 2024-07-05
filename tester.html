@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Nature Blog</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="../css/navbar.css"> -->
+        <link rel="stylesheet" href="../css/tester.css" type="text/css" media="all">
+        <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Inter%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.5.4' media='all' />
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <nav>
+            <label class="logo"><img src="images/logo-performve.png"></label>
+            <div class="toggle-btn">
+                <i class="fa fa-bars" id="menu-btn-toggle"></i>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="home.html#page2">About</a>
+                </li>
+                <li>
+                    <a href="home.html#page3">Services</a>
+                </li>
+                <li>
+                  <a href="news.html">News</a>
+              </li>
+                <li>
+                    <a href="contact2.html">Contact</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#">En</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">English</a></li>
+                      <li><a href="#">繁體中文</a></li>
+                      <li><a href="#">简体中文</a></li>
+                      <li><a href="#">Tiếng Việt</a></li>
+                    </ul>
+                  </li>
+              <li class="login">
+                <a href="#">LOG IN</a>
+            </li>            
+            </ul>
+    
+        </nav>
+
+        
+        
+        
+    </body>
+
+    <script>
+      const menuBtn = document.getElementById('menu-btn-toggle');
+const menuList = document.querySelector('ul');
+let isClicked = false;
+
+menuBtn.addEventListener('click', () => {
+    if(!isClicked) {
+        menuList.style.left = 0;
+        isClicked = true;
+    } else {
+        menuList.style.left = '-100%';
+        isClicked = false;
+    }
+}, false);
+    </script>
+</html>

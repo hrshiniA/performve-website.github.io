@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/yflife.css"type="text/css" medial="all">
+    <link rel="stylesheet" href="../css/overall.css" type="text/css" medial="all">
+    <!-- <link rel="stylesheet" href="../css/navbar.css" type="text/css" medial="all"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Inter%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.5.4' media='all' />
+    <title>YFLife</title>
+</head>
+<body>
+
+    <nav id="homenav">
+        <label class="logo"><img src="images/logo-performve.png "></label>
+        <div class="toggle-btn">
+            <i class="fa fa-bars" id="menu-btn-toggle"></i>
+        </div>
+
+        <ul>
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="home.html#page2">About</a>
+            </li>
+            <li>
+                <a href="home.html#page3">Services</a>
+            </li>
+            <li>
+              <a href="news.html">News</a>
+          </li>
+            <li>
+                <a href="contact2.html">Contact</a>
+            </li>
+            <li class="dropdown">
+              <a href="#">En</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">English</a></li>
+                <li><a href="#">繁體中文</a></li>
+                <li><a href="#">简体中文</a></li>
+                <li><a href="#">Tiếng Việt</a></li>
+              </ul>
+            </li>
+            <li class="login">
+              <a href="#">LOG IN</a>
+            </li>   
+        </ul>
+    </nav>
+
+    <div class="image">
+        <img src="images/yflife.jpg">
+    </div>
+
+    <div>
+        <div>
+            <h1><span id="head">Exciting Partnership Announcement:</span> <br>
+                AI-Powered HR Solution Chosen by YF Life Insurance <br>  International Limited
+            </h1>
+        </div>
+
+        <div id="logos">
+            <img src="images/logo2.png">
+            <img src="images/hkstp.png">
+            <img src="images/yflife logo.png">
+        </div>
+
+        <div id="para">
+            <p>
+                We are thrilled that our company has been selected by YF Life Insurance International Limited (“YF”), <br>
+                a premier provider of employee medical benefits and pension schemes, to offer our cutting-edge AI-powered <br>
+                HR solution for its existing and future clients in Hong Kong and Macau.<br>
+                <br>
+                After a thorough evaluation of the companies in the Park by the Hong Kong Science & Technology <br>
+                Park Company, our comprehensive AI-powered HR was recommended to YF, who highly appraised its <br>
+                capabilities and functionalities.<br>
+                <br>
+                The signing ceremony with YF will be organized by YF and HKSTP jointly in July 2024, further <br>
+                solidifying this exciting collaboration. This partnership represents a significant milestone for our <br>
+                organization, our branding, recognition and industry standing. It also reflects the trust and <br>
+                confidence placed in our innovative technology and our commitment to delivering exceptional <br>
+                AI-powered HR services. <br>
+                <br>
+                We are excited to embark on this new chapter and are grateful for the support and trust of our <br>
+                clients, colleagues, and invaluable friends like you. <br>
+                <br>
+
+                K.C. Sit <br>
+                Managing Director <br>
+            </p>
+
+        </div>
+    </div>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <img src="images/logo-performve-white.png">
+
+            <p class="footer-links">
+                <a href="home.html" class="link-1">Home</a>
+                
+                <a href="#page2">About</a>
+            
+                <a href="#page3">Services</a>
+            
+                <a href="news.html">News</a>
+                
+                <a href="contact.html">Contact</a>
+                
+                <a href="">Log In</a>
+            </p>
+
+            <p class="footer-company-name">© Copyright 2024 <span>PerformVE Limited</span>. All Rights Reserved</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p>Unit 539C, 5/F, 1W<br>Hong Kong Science Park </p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p class="contact"><a href="tel:+852 9308 2800">+852 9308 2800</a></p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">support@performve.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+                A performance analytics company using AI with predictive capability to give clients deep insight of performance on human capital, return on investment and business to increase competetive edge, revenue, and business growth.
+            </p>
+
+            <!-- <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div> -->
+
+        </div>
+
+    </footer>
+</body>
+
+<script>
+    const menuBtn = document.getElementById('menu-btn-toggle');
+  const menuList = document.querySelector('ul');
+  let isClicked = false;
+  
+  menuBtn.addEventListener('click', () => {
+      if(!isClicked) {
+          menuList.style.left = 0;
+          isClicked = true;
+      } else {
+          menuList.style.left = '-100%';
+          isClicked = false;
+      }
+  }, false);
+  </script>
+</html>

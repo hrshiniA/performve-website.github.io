@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/hratm.css"type="text/css" medial="all">
+    <link rel="stylesheet" href="../css/overall.css" type="text/css" medial="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Inter%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.5.4' media='all' />
+    <title>The Vein</title>
+</head>
+<body>
+    <nav id="homenav">
+        <label class="logo"><img src="images/logo-performve.png "></label>
+        <div class="toggle-btn">
+            <i class="fa fa-bars" id="menu-btn-toggle"></i>
+        </div>
+
+        <ul>
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="home.html#page2">About</a>
+            </li>
+            <li>
+                <a href="home.html#page3">Services</a>
+            </li>
+            <li>
+              <a href="news.html">News</a>
+          </li>
+            <li>
+                <a href="contact2.html">Contact</a>
+            </li>
+            <li class="dropdown">
+              <a href="#">En</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">English</a></li>
+                <li><a href="#">繁體中文</a></li>
+                <li><a href="#">简体中文</a></li>
+                <li><a href="#">Tiếng Việt</a></li>
+              </ul>
+            </li>
+            <li class="login">
+              <a href="#">LOG IN</a>
+            </li>   
+        </ul>
+    </nav>
+
+    <main>
+        <div id="container">
+            <div id="image">
+                <img src="images/vein_2.jpg">
+            </div>
+            <div id="one">
+                <p>VEIN</p>
+            </div>
+            </div>
+
+        <div>
+            <div>
+                <p id="line1">boosting retention with</p>
+                <p id="line2">The Vein</p>
+                <div id="left">
+                <p id="line3_left">
+                    Use AI to turn employees' true f eeling into quantifiable real time<br>
+                    data with AI recommendation to uplift engagement<br>
+                    <br>
+                    Deep understanding of employees' gap with the managers, <br>
+                    and what motivational drivers give biggest impact. <br>
+                    <br>
+                    Powerful dashboard in a second that are easy to understand and <br>
+                    share.<br> 
+                    <br>
+                    Makes employees feel valued. <br>
+                </p>
+            </div>
+
+            <div>
+                <p id="line1">and</p>
+                <p id="line2">Onboard deVein</p>
+
+                <div class="meme">
+                    <img src="images/onboard de vein.png">
+                  </div>
+                  
+                <div id="left">
+                <p id="line3_left">
+                    Makes new hires feel valued. <br>
+                    <br>
+                    Enhances effective onboarding program to justify the new hire <br>
+                    investment.<br>
+                    <br>
+                    Turns new hires' sentiment into valuable data in real time data to <br>
+                    enact more targeted onboarding practices, and likelihood to stay.<br>
+                    <br>
+                    Deep insight of when the new hires can reach full productivity.<br>
+                    <br>    
+                    Leads to organizational commitment, higher job satisfaction and <br>
+                    performance levels, lowered stress, and turnover.<br> 
+
+                </p>
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <img src="images/logo-performve-white.png">
+
+            <p class="footer-links">
+                <a href="home.html" class="link-1">Home</a>
+                
+                <a href="#page2">About</a>
+            
+                <a href="#page3">Services</a>
+            
+                <a href="news.html">News</a>
+                
+                <a href="contact.html">Contact</a>
+                
+                <a href="">Log In</a>
+            </p>
+
+            <p class="footer-company-name">© Copyright 2024 <span>PerformVE Limited</span>. All Rights Reserved</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p>Unit 539C, 5/F, 1W<br>Hong Kong Science Park </p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p class="contact"><a href="tel:+852 9308 2800">+852 9308 2800</a></p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">support@performve.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+                A performance analytics company using AI with predictive capability to give clients deep insight of performance on human capital, return on investment and business to increase competetive edge, revenue, and business growth.
+            </p>
+
+             <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div> 
+
+        </div>
+
+    </footer>
+</body>
+
+<script>
+    const menuBtn = document.getElementById('menu-btn-toggle');
+  const menuList = document.querySelector('ul');
+  let isClicked = false;
+  
+  menuBtn.addEventListener('click', () => {
+      if(!isClicked) {
+          menuList.style.left = 0;
+          isClicked = true;
+      } else {
+          menuList.style.left = '-100%';
+          isClicked = false;
+      }
+  }, false);
+  </script>
+</html>
